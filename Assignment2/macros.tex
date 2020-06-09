@@ -1,0 +1,61 @@
+
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+
+\newcommand{\homework}[8]{
+   \pagestyle{fancy}
+   \thispagestyle{plain}
+   \newpage
+   \setcounter{page}{1}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{\vspace{2mm}
+    \hbox to 6.78in { { CS345:~Algorithms - II \hfill {\small #2}} }
+       \vspace{6mm}
+       \hbox to 6.78in { {\Large \hfill \bf#1  \hfill} }
+       \vspace{6mm}
+       \hbox to 6.78in { {\large {Name: {\rm \textbf{#3}}}}{\hfill {Instructor: #6}}}
+       \vspace{2mm}
+       \hbox to 6.78in { {\large {Roll-No: {\rm \textbf{#4}}}}{\hfill TA: #5}}
+       \vspace{2mm}
+       \hbox to 6.78in { {{Email: {\rm #7}}}{\hfill TA's Email: #8}  }
+       \vspace{2mm}
+       \hbox to 6.78in { {\large{\hfill Max Points: 50}} }
+       \vspace{2mm}
+      \vspace{2mm}}
+   }
+   \end{center}
+   \fancyhf{}
+    \fancyhead[LE,RO]{{CS345:~Algorithms - II}}
+    \fancyhead[RE,LO]{{#3 -- #4}}
+    \fancyfoot[CE,CO]{Page: \thepage}
+    \fancyfoot[LE,RO]{{#1}}
+   \renewcommand{\headrulewidth}{1pt}
+   \renewcommand{\footrulewidth}{1pt}
+   \vspace*{4mm}
+}
+
+\newcommand{\problem}[2]{~\\\fbox{\bf\large{#1}}\hfill [#2]\newline\newline}
+\newcommand{\subproblem}[1]{~\\\fbox{\textbf{Sub - Problem #1}}\newline\newline}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\Hy}{\mathcal{H}}
+\newcommand{\VS}{\textrm{VS}}
+\newcommand{\solution}{~\newline\textbf{\textit{(Solution)}} }
+
+\newcommand{\bbF}{\mathbb{F}}
+\newcommand{\bbX}{\mathbb{X}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bepsilon}{\boldsymbol{\epsilon}}
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\0}{\mathbf{0}}
